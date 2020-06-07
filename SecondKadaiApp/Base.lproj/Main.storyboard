@@ -25,19 +25,20 @@
                                 <rect key="frame" x="168.5" y="249" width="77" height="30"/>
                                 <state key="normal" title="挨拶を表示"/>
                                 <connections>
-                                    <action selector="handle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAp-OZ-4ip"/>
-                                    <segue destination="Ir5-Fb-D0T" kind="show" id="zk1-g6-ZOZ"/>
+                                    <action selector="handle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vDL-Ht-qwL"/>
+                                    <segue destination="Ir5-Fb-D0T" kind="show" id="SaN-Cd-Uiv"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WWi-ST-j3o">
-                                <rect key="frame" x="132" y="165" width="140" height="34"/>
+                                <rect key="frame" x="107" y="168" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Xoz-Er-1IG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="bandle:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="KOG-yE-7vZ"/>
                                     <action selector="handle:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="8T6-g0-zj2"/>
-                                    <action selector="text:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="B9Y-ZK-bXj"/>
-                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qfI-jT-akR"/>
+                                    <action selector="textField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="E1H-Pe-bKu"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -57,13 +58,12 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="sag-zC-4B9" id="DzI-Wr-3PA"/>
-                        <outlet property="text" destination="WWi-ST-j3o" id="wo9-so-SdZ"/>
                         <outlet property="textField" destination="WWi-ST-j3o" id="d7o-tS-gDh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46.376811594202906" y="231.69642857142856"/>
+            <point key="canvasLocation" x="-113" y="742"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="WOV-pj-o1X">
@@ -83,7 +83,7 @@
                                 <rect key="frame" x="191.5" y="221" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
-                                    <segue destination="Ltt-my-K99" kind="unwind" unwindAction="unwind:" id="bL9-EH-TPc"/>
+                                    <segue destination="Ltt-my-K99" kind="unwind" unwindAction="unwind:" id="6Kq-JR-tvE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -104,7 +104,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YWc-zu-InU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ltt-my-K99" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="581" y="232"/>
+            <point key="canvasLocation" x="668" y="983"/>
         </scene>
     </scenes>
 </document>

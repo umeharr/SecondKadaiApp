@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBAction func handle(_ sender: Any) {
+        
     }
-    @IBAction func textField(_ sender: Any) {
+    
+    @IBAction func textField(_ sender: UITextField) {
     }
     @IBOutlet weak var textField: UITextField!
     
